@@ -2,7 +2,7 @@
 
 ***Files***
 
-**Non-normality.ipynb**: analyze the properties and E-I interactivity of the recurrent weight tensors. 
+**Nonnormality.ipynb**: analyze the properties and E-I interactivity of the recurrent weight tensors. 
 
 **RSA.ipynb**: perform representational similarity analysis across models. 
 
