@@ -1,52 +1,52 @@
 def get_files(ftype='activity'):
   s = 'activity_0' if ftype == 'activity' else ftype
   file_dict = {
-    'supralinear': [
+    'SL': [
         'alexnetRepEI_128FF_nt16_dt2.0_pwr1.9_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Abs_0009v3_{}.pkl'.format(s)
     ],
-    'linear': [
+    'L': [
         'alexnetRepEI_128FF_nt16_dt2.0_pwr1.0_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Abs_0011v3_{}.pkl'.format(s)
     ],
-    'local10_linear': [
+    'l10_L': [
         'alexnetRepEIdd_128FF_nt16_dt2.0_pwr1.0_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd10_0002v4_{}.pkl'.format(s)
     ],
-    'local40_supralinear': [
+    'l40_SL': [
         'alexnetRepEIdd_128FF_nt16_dt2.0_pwr1.9_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd40_0011v4_{}.pkl'.format(s)
     ],
-    'local40_supralinear_VC': [
+    'l40_SL_VC': [
         'alexnetRepEIdd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd40VC_0013v4_{}.pkl'.format(s)
     ],
-    'local20_linear_posInput': [
+    'l20_L_PI': [
         'alexnetRepEIdd_128FF_nt16_dt2.0_pwr1.0_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20PO_0009v4_{}.pkl'.format(s)
     ],
-    'local10_linear_VC': [
+    'l10_L_VC': [
         'alexnetRepEIdd_128FF_nt16_dt2.0_pwr1.0_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd10VC_0007v4_{}.pkl'.format(s)
     ],
-    'local25_supralinear_VC': [
+    'l25_SL_VC': [
         'alexnetRepEIdd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.04tnorm_FF0.02Mom0.9LR0.01drp30Absdd25VC_0021v4_{}.pkl'.format(s)
     ],
-    'local20_linear_posInput_EOutput': [
+    'l20_L_VC_PI_EO': [
         'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.0_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20VC2POEO_0019v5_{}.pkl'.format(s)
     ],
-    'local20_supralinear_VC_posInput': [
+    'l20_SL_VC_PI': [
         'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20VC2PO_0010v5_{}.pkl'.format(s)
     ],
-    'local20_linear_VC_posInput': [
+    'l20_L_VC_PI': [
         'alexnetRepEIdd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd40VC_0013v4_{}.pkl'.format(s)
     ],
-    'local20_supralinear_posInput': [
+    'l20_SL_PI': [
        'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20PO_0011v5_{}.pkl'.format(s)
     ],
-    'local20_linear_posInput': [
+    'l20_L_PI': [
         'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.0_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20PO_0012v5_{}.pkl'.format(s)
     ],
-    'local20_supralinear_VC': [
+    'l20_SL_VC': [
         'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20VC2_0016v5_{}.pkl'.format(s)
     ],
-    'local20_linear_VC': [
+    'l20_L_VC': [
         'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.0_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20VC2_0017v5_{}.pkl'.format(s)
     ],
-    'local20_supralinear_VC_posInput_EOutput': [
+    'l20_SL_VC_PI_EO': [
         'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20VC2POEO_0020v5_{}.pkl'.format(s)
     ]
     
