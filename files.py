@@ -1,4 +1,13 @@
 def get_files(ftype='activity'):
+  """
+  Repository of saved data files.
+  Model name key:
+    - lX = locally restricted connections with width X
+    - (S)L = (supra)linear
+    - PI = positive input
+    - EO = excitatory output only
+    - VC = trained with variable contrast images
+  """
   s = 'activity_0' if ftype == 'activity' else ftype
   file_dict = {
     'SL': [
@@ -32,7 +41,7 @@ def get_files(ftype='activity'):
         'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20VC2PO_0010v5_{}.pkl'.format(s)
     ],
     'l20_L_VC_PI': [
-        'alexnetRepEIdd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd40VC_0013v4_{}.pkl'.format(s)
+        'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.0_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20VC2PO_0013v5_{}.pkl'.format(s)
     ],
     'l20_SL_PI': [
        'alexnetRepEI5dd_128FF_nt16_dt2.0_pwr1.8_k1.0_EIstd0.02tnorm_FF0.02Mom0.9LR0.01drp30Absdd20PO_0011v5_{}.pkl'.format(s)
@@ -53,6 +62,6 @@ def get_files(ftype='activity'):
   } 
     
   if ftype == 'weights':
-    del file_dict['supralinear']
-    del file_dict['linear']
+    del file_dict['SL']
+    del file_dict['L']
   return file_dict
